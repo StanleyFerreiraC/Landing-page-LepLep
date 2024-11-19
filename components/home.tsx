@@ -1,3 +1,4 @@
+import back from "@/public/BotFoot1Copia.png";
 export default function Home() {
   return (
     <section
@@ -32,7 +33,7 @@ export default function Home() {
 
       <img
         alt=""
-        src="/BotFoot1Copia.png"
+        src={back.src}
         className="h-56 w-full object-cover sm:h-full"
       />
     </section>

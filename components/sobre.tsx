@@ -3,9 +3,13 @@
 import { useState, useEffect } from "react";
 import "../app/css/style.css";
 
+import mercado1 from "@/public/MercadoEntrada.jpeg";
+import mercado2 from "@/MercadoInt.jpeg";
+import mercado3 from "@/public/mercado1.jpg";
+
 export default function Sobre() {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ["/MercadoEntrada.jpeg", "/MercadoInt.jpeg", "/mercado1.jpg"];
+  const images = [mercado1, mercado2, mercado3];
 
   const nextImage = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
@@ -26,7 +30,7 @@ export default function Sobre() {
             <div className="relative lg:h-full ">
               <img
                 alt=""
-                src={images[currentImage]}
+                src={images[currentImage].src}
                 className="md:rounded-xl"
               />
               <div className="absolute inset-x-0 bottom-0 flex justify-center p-4">

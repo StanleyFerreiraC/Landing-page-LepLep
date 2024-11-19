@@ -1,3 +1,6 @@
+import instagram from "@/public/instagram.svg";
+import whatsapp from "@/public/whatsapp.svg";
+
 export default function Cta() {
   return (
     <section id="contato">
@@ -12,19 +15,14 @@ export default function Cta() {
                 className="hover:scale-110 transition "
               >
                 <img
-                  src="/instagram.svg"
+                  src={instagram.src}
                   width={50}
                   height={50}
                   alt="instagram"
                 />
               </a>
               <a>
-                <img
-                  src="/whatsapp.svg"
-                  width={50}
-                  height={50}
-                  alt="whatsapp"
-                />
+                <img src={whatsapp.src} width={50} height={50} alt="whatsapp" />
               </a>
             </div>
             <div className="mb-3 flex gap-3">
