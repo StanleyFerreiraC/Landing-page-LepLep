@@ -7,3 +7,28 @@
 @import "additional-styles/theme.css";
 
 @import "tailwindcss/utilities";
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b45309;
+  border-radius: 20px;
+  border: 3px solid var(--color-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a04a09;
+}
+
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+

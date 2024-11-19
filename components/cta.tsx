@@ -1,50 +1,80 @@
-import Image from "next/image";
-import Stripes from "@/public/images/stripes-dark.svg";
-
 export default function Cta() {
   return (
-    <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div
-          className="relative overflow-hidden rounded-2xl text-center shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
-          data-aos="zoom-y-out"
-        >
-          {/* Glow */}
-          <div
-            className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 translate-y-1/2"
-            aria-hidden="true"
-          >
-            <div className="h-56 w-[480px] rounded-full border-[20px] border-blue-500 blur-3xl" />
-          </div>
-          {/* Stripes illustration */}
-          <div
-            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
-            aria-hidden="true"
-          >
-            <Image
-              className="max-w-none"
-              src={Stripes}
-              width={768}
-              height={432}
-              alt="Stripes"
-            />
-          </div>
-          <div className="px-4 py-12 md:px-12 md:py-20">
-            <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.700/.7),transparent)1] md:mb-12 md:text-4xl">
-              Create your next project with Simple
-            </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
+    <section id="contato">
+      <div className="mx-auto bg-white flex justify-center">
+        <div className="relative overflow-hidden p-10 md:flex md:w-3/4 md:justify-between ">
+          <div className="flex flex-col items-center md:items-start gap-7 mb-6">
+            <h2 className="text-2xl font-bold border-b-2">Rede Sociais</h2>
+            <div className="flex gap-3">
               <a
-                className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
+                href="https://www.instagram.com/leplepcouros/"
+                target="_blank"
+                className="hover:scale-110 transition "
               >
-                <span className="relative inline-flex items-center">
-                  Start Free Trial{" "}
-                  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
-                  </span>
-                </span>
+                <img
+                  src="/images/instagram.svg"
+                  width={50}
+                  height={50}
+                  alt="instagram"
+                />
               </a>
+              <a>
+                <img
+                  src="/images/whatsapp.svg"
+                  width={50}
+                  height={50}
+                  alt="whatsapp"
+                />
+              </a>
+            </div>
+            <div className="mb-3 flex gap-3">
+              <a
+                href="#inicio"
+                className="text-md font-bold text-gray-600 mb-1"
+              >
+                Inicio
+              </a>
+              <a href="#sobre" className="text-md font-bold text-gray-600 mb-1">
+                Sobre
+              </a>
+              <a href="#servicos" className="text-md font-bold text-gray-600 ">
+                Serviços
+              </a>
+            </div>
+          </div>
+          <div className=" md:flex gap-7 justify-end">
+            <div className="mb-5">
+              <h2 className="text-2xl font-bold border-b-2">
+                Não sabe onde nos encontrar ?
+              </h2>
+              <div className="mt-4 mb-4">
+                <p className="text-md font-bold text-gray-600 ">Endereço:</p>
+                <p className="text-md  text-gray-600 ">
+                  Loja 240 - 1° piso do mercado central
+                </p>
+                <p className="text-md  text-gray-600 ">
+                  Av. Alberto Nepomuceno, 199 - Centro, Fortaleza - CE,
+                  60055-000
+                </p>
+              </div>
+              <div>
+                <p className="text-md font-bold text-gray-600">
+                  Horario de funcionamento:
+                </p>
+                <p className="text-md  text-gray-600">
+                  Segunda a Sexta das 8h às 18h
+                </p>
+                <p className="text-md  text-gray-600">Sabado das 8h às 12h</p>
+              </div>
+            </div>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63702.65832607338!2d-38.6086662424456!3d-3.71905991698959
+                2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7484b8840959b:0x6ed535a1099961fd!2sMercado Central de Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1731866914945!5m2!1spt-BR!2sbr"
+                width="300"
+                height="300"
+                style={{ border: 0, borderRadius: "12px" }}
+              ></iframe>
             </div>
           </div>
         </div>

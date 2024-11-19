@@ -1,37 +1,105 @@
-import Link from "next/link";
-import Logo from "./logo";
+import { useState } from "react";
+import Image from "@/public/images/icons8.png";
 
 export default function Header() {
-  return (
-    <header className="fixed top-2 z-30 w-full md:top-6">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
-          {/* Site branding */}
-          <div className="flex flex-1 items-center">
-            <Logo />
-          </div>
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-          {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
-            <li>
-              <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
-              >
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/signup"
-                className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
-              >
-                Register
-              </Link>
-            </li>
-          </ul>
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
+  return (
+    <header className="fixed z-30 w-full">
+      <nav className="bg-white border-gray-200">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a
+            href="#"
+            className="flex items-center space-x-3 rtl:space-x-reverse gap-2"
+          >
+            <img
+              src={Image.src}
+              className="h-8 scale-[1.4]"
+              alt="Flowbite Logo"
+            />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+              LepLep
+            </span>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100
+            focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded={navbarOpen ? "true" : "false"}
+            onClick={toggleNavbar}
+          >
+            <span className="sr-only">Open main menu</span>
+            <svg
+              className="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            className={`${
+              navbarOpen ? "block" : "hidden"
+            } top-full left-0 w-full md:block md:w-auto text-center `}
+            id="navbar-default"
+          >
+            <ul
+              className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100
+             rounded-lg bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:hover:text-yellow-700 md:p-0  font-bold"
+                  aria-current="page"
+                >
+                  Inicio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#sobre"
+                  className="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:hover:text-yellow-700 md:p-0  font-bold"
+                >
+                  Sobre
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  className="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:hover:text-yellow-700 md:p-0  font-bold"
+                >
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contato"
+                  className="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:hover:text-yellow-700 md:p-0  font-bold"
+                >
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+          
         </div>
-      </div>
+        
+      </nav>
     </header>
   );
 }
