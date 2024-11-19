@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import "../app/css/style.css";
 
 import mercado1 from "@/public/MercadoEntrada.jpeg";
-import mercado2 from "@/MercadoInt.jpeg";
+import mercado2 from "@/public/MercadoInt.jpeg";
 import mercado3 from "@/public/mercado1.jpg";
 
 export default function Sobre() {
