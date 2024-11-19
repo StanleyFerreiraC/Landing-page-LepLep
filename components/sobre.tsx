@@ -6,6 +6,7 @@ import "../app/css/style.css";
 import mercado1 from "@/public/MercadoEntrada.jpeg";
 import mercado2 from "@/public/MercadoInt.jpeg";
 import mercado3 from "@/public/mercado1.jpg";
+import background from "@/public/couro2.jpeg";
 
 export default function Sobre() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -22,7 +23,8 @@ export default function Sobre() {
   return (
     <section
       id="sobre"
-      className="relative flex items-center before:absolute before:inset-0 before:-z-20  bg-[url('/images/couro2.jpeg')] bg-cover bg-no-repeat"
+      className="relative flex items-center before:absolute before:inset-0 before:-z-20"
+      style={{ backgroundImage: `url(${background.src})` }}
     >
       <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:h-4/6 lg:grid-cols-2">
