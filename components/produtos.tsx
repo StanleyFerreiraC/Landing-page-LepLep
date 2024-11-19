@@ -7,7 +7,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner1.jpeg"
+                src="/banner1.jpeg"
                 alt="Produto 1"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -18,7 +18,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner2.jpeg"
+                src="/banner2.jpeg"
                 alt="Produto 2"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -29,7 +29,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner3.jpeg"
+                src="/banner3.jpeg"
                 alt="Produto 3"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -40,7 +40,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner4.jpeg"
+                src="/banner4.jpeg"
                 alt="Produto 4"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -50,7 +50,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner8.jpeg"
+                src="/banner8.jpeg"
                 alt="Produto 8"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -61,7 +61,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner5.jpeg"
+                src="/banner5.jpeg"
                 alt="Produto 4"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -72,7 +72,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner6.jpeg"
+                src="/banner6.jpeg"
                 alt="Produto 4"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -82,7 +82,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner7.jpeg"
+                src="/banner7.jpeg"
                 alt="Produto 7"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -92,7 +92,7 @@ export default function Produtos() {
           <li className="min-w-[200px] max-w-[250px] flex-shrink-0">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="/images/banner9.jpeg"
+                src="/banner9.jpeg"
                 alt="Produto 8"
                 className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />

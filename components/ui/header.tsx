@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Image from "@/public/images/icons8.png";
+import Image from "@/public/icons8.png";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);

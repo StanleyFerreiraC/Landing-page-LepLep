@@ -12,7 +12,7 @@ export default function Cta() {
                 className="hover:scale-110 transition "
               >
                 <img
-                  src="/images/instagram.svg"
+                  src="/instagram.svg"
                   width={50}
                   height={50}
                   alt="instagram"
@@ -20,7 +20,7 @@ export default function Cta() {
               </a>
               <a>
                 <img
-                  src="/images/whatsapp.svg"
+                  src="/whatsapp.svg"
                   width={50}
                   height={50}
                   alt="whatsapp"
